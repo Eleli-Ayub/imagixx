@@ -1,0 +1,24 @@
+.homeRight{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    margin-top: 10%;
+    margin-left: 2%;
+    position: relative;
+    height: 30vh;
+    
+    h1{
+    font-size: 80px;   
+    transform: rotateZ(-90deg);
+    }
+
+    img{
+        transform: rotateZ(-90deg);
+        margin-top: -90px;
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    }
+}

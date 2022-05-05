@@ -1,0 +1,42 @@
+.ValuesWrapper{
+    position: relative;
+    margin-left: 5%;
+    top: 40vh;
+    display: flex;
+    flex-direction: row-reverse;
+    bottom: 10vh;
+    height: 100vh;
+
+    .leftSide{
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            margin: 2%;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+            font-style: 20px;
+            font-weight: 600;
+            font-size: 20px;
+
+        }
+    }
+    .rightSide{
+        display: flex;
+        flex: 6;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 70vh;
+            object-fit: cover;
+        }
+    }
+}
