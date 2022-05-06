@@ -1,0 +1,51 @@
+.rateCard{
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    top: 0px;
+    
+    .leftSide{
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        img{
+            width: 40vw;
+            height: 60vh;
+            align-self: center;
+            object-fit: cover;
+            margin-top: 10%;
+            border-radius: 5px;
+        }
+    }
+
+    .rightSide{
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .details{
+            height: fit-content;
+
+            p{
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            i{
+                font-size: 18px;
+            }
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+}
+.rateHeader{
+    margin-top: 2%;
+    text-align: center;
+}

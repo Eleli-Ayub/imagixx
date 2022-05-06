@@ -1,0 +1,35 @@
+.galleryItem{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    img{
+        width: 60vw;
+        height: 60vh;
+        margin: 2% 0;
+        object-fit: cover;
+    }
+
+    .navButtons{
+        width: fit-content;
+
+        button{
+            width: 70px;
+            height: 70px;
+            margin: 3px;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            transition: 1s;
+
+            &:hover{
+                transform: scale(1.1);
+                background-color: red;
+            }
+        }
+        
+    }
+}
