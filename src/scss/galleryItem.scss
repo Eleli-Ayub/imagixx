@@ -33,3 +33,41 @@
         
     }
 }
+@media only screen and (max-width: 600px) {
+    .galleryItem{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        
+        img{
+            width: 90vw;
+            height: 60vh;
+            margin: 2% 0;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    
+        .navButtons{
+            width: fit-content;
+    
+            button{
+                width: 70px;
+                height: 70px;
+                margin: 3px;
+                outline: none;
+                border: none;
+                border-radius: 3px;
+                transition: 1s;
+    
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: red;
+                }
+            }
+            
+        }
+    }
+  }

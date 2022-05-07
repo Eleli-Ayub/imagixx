@@ -3,14 +3,18 @@ import Header from './components/Header';
 import Gallery from './pages/Gallery';
 import Home from './pages/Home';
 import Rates from './pages/Rates';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <Header/>
-      {/* <Home/> */}
-      {/* <Rates/> */}
-      <Gallery/>
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path='/Home' element={<Home/>}/>
+          <Route path='/Rates' element={<Rates/>}/>
+          <Route path='/Gallery' element={<Gallery/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }

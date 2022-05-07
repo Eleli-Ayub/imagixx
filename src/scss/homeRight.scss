@@ -22,3 +22,25 @@
         object-fit: cover;
     }
 }
+@media only screen and (max-width: 600px) {
+    .homeRight{
+        width: 10%;
+        margin-top: 180px;
+        margin-left: 2%;
+        position: relative;
+        height: 20vh;
+
+        h1{
+            font-size: 60px;   
+            transform: rotateZ(-90deg);
+            }
+        
+            img{
+                transform: rotateZ(-90deg);
+                margin-top: -60px;
+                height: 50px;
+                width: 50px;
+                object-fit: cover;
+            }
+    }
+  }
