@@ -1,23 +1,23 @@
 import React from 'react'
+import '../scss/values.scss';
 import rightSideImg from '../assets/images/rightSideImg.jpg'
 
 function Values() {
   return (
     <div className='ValuesWrapper'>
-        <div className="leftSide">
-        <h1>We boost these values</h1>
-            <ul>
-                <li>Timeliness</li>
-                <li>High Quality</li>
-                <li>Affordability</li>
-                <li>Client Engagement</li>
-                <li>Team Work</li>
-                <li>High Quality Equipement</li>
-            </ul>
-        </div>
-        <div className="rightSide">
-            <img src={ rightSideImg }/>
-        </div>
+      <span className="title">
+        <h1>Why Work With Us.</h1>
+      </span>
+      <div className="values">
+        <p>Timeliness</p>
+        <p>High Quality</p>
+        <p>Affordability</p>
+        <p>Engagement</p>
+        <p>Team Work</p>
+        <p>Consistency</p>
+        <p>High Quality Equipement</p>
+      </div>
+        
     </div>
   )
 }

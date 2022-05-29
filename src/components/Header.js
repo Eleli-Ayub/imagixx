@@ -1,19 +1,32 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from "react-router-dom"
+import '../scss/header.scss';
+import facebook from '../assets/icons/facebookColored.png'
+import instagram from '../assets/icons/instagram.png'
+import gmail from '../assets/icons/email.png'
+import phone from '../assets/icons/phone.png'
+
  
 function Header() {
-  const[loginStatus, setLoginStatus] = useState(true)
-  const logout = ()=>{
-    setLoginStatus(!loginStatus)
-  }
   return (
    <div className="headerWrapper">
       
-       <ul>
-           <li><Link to="/Home">HOME</Link></li>
+       <ul className='navs'>
+           <li><Link to="/">HOME</Link></li>
            <li><Link to="/Rates">RATES</Link></li>
            <li><Link to="/Gallery">GALLERY</Link></li>
-           {loginStatus ? <li><Link to="/Home"><button onClick={logout}>LOGOUT</button></Link></li> : <li><Link to="/Login">LOGIN</Link></li> }
+       </ul>
+       
+       <ul className="socialIcons">
+         <span className='socials'>
+            <li><a href=""><img src={ facebook } alt="" /></a></li>
+            <li><a href=""><img src={ instagram } alt="" /></a></li>
+            <li><a href=""><img src={ gmail } alt="" /></a></li>
+         </span>
+         <span className='phone'>
+           <img src={ phone } alt="" />
+           <p>0702659667</p>
+         </span>
        </ul>
    </div>
   )

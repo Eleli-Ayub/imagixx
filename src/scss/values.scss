@@ -1,80 +1,61 @@
 .ValuesWrapper{
     position: relative;
     margin-left: 5%;
-    top: 40vh;
+    top: 50vh;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     bottom: 10vh;
     height: 100vh;
 
-    .leftSide{
-        flex: 6;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .title{
+        align-self: center;
+        font-family: 'Berkshire Swash', cursive; 
+        font-size: 30px;
+    }
 
-        h1{
-            margin: 2%;
+    .values{
+        align-self: center;
+
+        p{
+            font-size: 25px;
         }
 
-        ul{
-            display: flex;
-            flex-direction: column;
-            margin-top: 5px;
-            font-style: 20px;
-            font-weight: 600;
-            font-size: 20px;
-
+        p:nth-child(1){
+            position: absolute;
+            top: 15%;
+            right: 35%;
+        }
+        p:nth-child(2){
+            position: absolute;
+            right: 20%;
+            top: 35%;
+        }
+        p:nth-child(3){
+            position: absolute;
+            right: 35%;
+            top: 60%;
+        }
+        p:nth-child(4){
+            position: absolute;
+            left: 40%;
+            top: 60%;
+        }
+        p:nth-child(5){
+            position: absolute;
+            left: 25%;
+            top: 35%;
+        }
+        p:nth-child(6){
+            position: absolute;
+            top: 15%;
+            left: 40%;
+        }
+        p:nth-child(7){
+            position: absolute;
+            right: 40%;
+            top: 35%;
+            color: red;
         }
     }
-    .rightSide{
-        display: flex;
-        flex: 6;
-        justify-content: center;
-        align-items: center;
 
-        img{
-            height: 70vh;
-            object-fit: cover;
-        }
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .ValuesWrapper{
-        top: 25vh;
-        margin-bottom: 20vh;
-    
-        .leftSide{
-            position: relative;
-            margin-top: 20vh;
-            height: 60vh;
-            margin-left: -100vw;
-    
-            h1{
-                position: absolute;
-                top: 2%;       
-                width: 50vw;       
-            }
-    
-            ul{
-                li{
-                    margin: 2%;
-                    font-weight: 700;
-                }
-    
-            }
-        }
-        .rightSide{    
-            max-width: 100vw;
-            margin-left: -50px;
-            img{
-                height: 60vh;
-                width: 400px;    
-                opacity: 0.5;
-                z-index: -5;
-            }
-        }
-    }
   }
