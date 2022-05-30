@@ -1,11 +1,154 @@
 .ValuesWrapper{
     position: relative;
     margin-left: 5%;
-    top: 50vh;
+    top: 40vh;
     display: flex;
     flex-direction: column;
     bottom: 10vh;
     height: 100vh;
+
+    .circle{
+        animation: circlesanime linear 4s infinite;
+        pointer-events: none;
+    }
+
+    .circle1{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #A6A6A6;
+        opacity: 0.3;
+        top: 200px;
+        right: 100  px;
+    }
+    .circle2{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #A6A6A6;
+        opacity: 0.3;
+        top: 100px;
+        right: 10px;
+    }
+    .circle3{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: #A6A6A6;
+        opacity: 0.3;
+        top: 10px;
+        left: 200px;
+    }
+    .circle4{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #A6A6A6;
+        opacity: 0.3;
+        top: 50%;
+        right: 50%;
+    }
+    .circle5{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: #A6A6A6;
+        opacity: 0.3;
+        top: 70%;
+        right: 10%;;
+    }
+    .circle6{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #A6A6A6;
+        opacity: 0.3;
+        top: 70%;
+        left: 10%;;
+    }
+    .circle7{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #A6A6A6;
+        opacity: 0.3;
+        top: 10%;
+        right: 45%;;
+    }
+    .circle7{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: #A6A6A6;
+        opacity: 0.3;
+        top: 80%;
+        left: 5%;;
+    }
+    .images{
+        position: absolute;
+        margin: 0;
+        top: 5%;
+        height: 90vh;
+        width: 93vw;
+        opacity: 0.3;
+
+        img:nth-child(1){
+            width: 300px;
+            height: 400px;
+            margin-left: 5%;
+            margin-top: -5%;
+            object-fit: cover;
+        }
+        img:nth-child(2){
+            width: 200px;
+            height: 300px;
+            margin-left: 5%;
+            object-fit: cover;
+        }
+        img:nth-child(3 ){
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            margin-left: -40%;
+            margin-top: 25%;
+            object-fit: cover;
+        }
+        img:nth-child(4){
+            width: 250px;
+            height: 300px;
+            top: -15%;
+            right: 5%;
+            object-fit: cover;
+            position: absolute;
+        }
+        img:nth-child(5){
+            width: 400px;
+            height: 200px;
+            margin-left: 5%;
+            object-fit: cover;
+        }
+        img:nth-child(6){
+            width: 450px;
+            height: 250px;
+            top: 40%;
+            right: 10%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0.8;
+        }
+        img:hover{
+            transform: scale(1.1);
+            transform: rotateZ(10deg);
+        }
+    }
 
     .title{
         align-self: center;
@@ -15,6 +158,11 @@
 
     .values{
         align-self: center;
+        height: 70%;
+        width: 60%;
+        color: white;
+        background-color: #000;
+        
 
         p{
             font-size: 25px;
